@@ -1,0 +1,25 @@
+a {
+    color: blue;
+}
+.layui-colla-content {
+    /* 使文本自动换行 */
+    word-wrap:break-word;
+}
+.layui-colla-title {
+    /* 禁止选中 */
+    user-select:none;
+}
+button {
+    margin-right: 10px
+}
+body {
+    overflow-y: scroll;
+}
+.norap {
+    white-space:nowrap;
+    margin-right: 30px;
+}
+.logo {
+    width: 20px;
+    margin-right: 10px;
+}
