@@ -20,7 +20,7 @@
         <div class="layui-colla-content layui-show">
             <a class="norap" href="https://www.wangshaogang.com/"><img class="logo" src="logos/blog.png">我的博客</a>
             <a class="norap" href="https://code.wangshaogang.com/"><img class="logo" src="logos/code.png">代码库</a>
-            <a class="norap" href="https://download.wangshaogang.com/"><img class="logo" src="logos/download.png">文件下载</a>
+            <a class="norap" href="https://download.wangshaogang.com/"><img class="logo" src="logos/download.png">云文件</a>
             <a class="norap" href="https://diary.wangshaogang.com/"><img class="logo" src="logos/diary.png">日记</a>
             <a class="norap" href="https://text.wangshaogang.com/"><img class="logo" src="logos/text.png">文本工具</a>
             <a class="norap" href="https://igeekshop.wangshaogang.com/"><img class="logo" src="logos/shop.png">igeekshop</a>
@@ -33,35 +33,78 @@
 
     <div class="layui-colla-item">
         <h2 class="layui-colla-title">收藏的网站</h2>
-        <div class="layui-colla-content">
-            <a class="norap" href="https://www.bejson.com/">bejson</a>
-            <a class="norap" href="http://ip100.info/">ip100</a>
-            <a class="norap" href="https://www.iconfont.cn/plus/collections/index">阿里巴巴矢量图标库</a>
-            <a class="norap" href="https://oss.console.aliyun.com/bucket">阿里云oss控制台</a>
-            <a class="norap" href="https://dc.console.aliyun.com/">阿里云域名控制台</a>
-            <a class="norap" href="#">......</a>
+        <div class="layui-colla-content layui-show">
+
+            <div class="layui-colla-item">
+                <div class="layui-collapse">
+                    <h2 class="layui-colla-title">在线工具<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <a class="norap" href="https://www.bejson.com/"><img class="logo" src="https://www.bejson.com/favicon.ico"> bejson</a>
+                        <a class="norap" href="https://www.iamwawa.cn/daxiaoxie.html"><img class="logo" src="https://www.iamwawa.cn/Public/img/logo.png">蛙蛙工具-处理字符串</a>
+                        <a class="norap" href="https://tool.oschina.net/hexconvert"><img class="logo" src="https://tool.oschina.net/img/favicon.ico">进制转换</a>
+                        <a class="norap" href="http://ip100.info/"><img class="logo" src="logos/webside.png">IP100</a>
+                        <a class="norap" href="http://www.ip138.com/"><img class="logo" src="http://www.ip138.com/favicon.ico">IP、手机号查询</a>
+                        <a class="norap" href="https://yijiangaitu.com/"><img class="logo" src="https://yijiangaitu.com/image/favicon.ico">在线图片处理</a>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-colla-item">
+                <div class="layui-collapse">
+                    <h2 class="layui-colla-title">文档<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <a class="norap" href="https://v3.bootcss.com/css/"><img class="logo" src="https://v3.bootcss.com/favicon.ico">BootStrap3中文文档</a>
+                        <a class="norap" href="https://v4.bootcss.com/docs/getting-started/introduction/"><img class="logo" src="https://v3.bootcss.com/favicon.ico">BootStrap4文档</a>
+                        <a class="norap" href="https://www.layui.com/doc/"><img class="logo" src="https://www.layui.com/favicon.ico">Layui文档</a>
+                        <a class="norap" href="https://www.runoob.com/regexp/regexp-syntax.html"><img class="logo" src="https://static.runoob.com/images/favicon.ico">菜鸟教程-正则表达式文档</a>
+                        <a class="norap" href="https://www.cnblogs.com/liuxianan/p/chrome-plugin-develop.html"><img class="logo" src="https://www.cnblogs.com/favicon.ico">Chrome插件开发攻略（非官方）</a>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-colla-item">
+                <div class="layui-collapse">
+                    <h2 class="layui-colla-title">资源<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <a class="norap" href="https://www.iconfont.cn/plus/collections/index"><img class="logo" src="https://gtms04.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico">阿里巴巴矢量图标库</a>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-colla-item">
+                <div class="layui-collapse">
+                    <h2 class="layui-colla-title">Chrome相关<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <a class="norap" href="chrome://inspect/#devices" onclick="chromeLinkClick(this)"><img class="logo" src="logos/chrome.png">调试移动端</a>
+                        <a class="norap" href="chrome://net-internals/#dns" onclick="chromeLinkClick(this)"><img class="logo" src="logos/chrome.png">删除host缓存</a>
+                        <a class="norap" href="https://chrome.google.com/webstore?hl=zh-CN"><img class="logo" src="logos/chrome.png">chrome应用商店</a>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-colla-item">
+                <div class="layui-collapse">
+                    <h2 class="layui-colla-title">其他常用网站<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <a class="norap" href="https://homenew.console.aliyun.com/"><img class="logo" src="https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico">阿里云控制台</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div><!-- 收藏的网站 -->
 
-    <div class="layui-colla-item">
-        <h2 class="layui-colla-title">github项目</h2>
-        <div class="layui-colla-content">
-            <a class="norap" href="#">Android 2048</a>
-            <a class="norap" href="#">iGeekShop后端</a>
-            <a class="norap" href="#">iGeekShop前端</a>
-            <a class="norap" href="#">......</a>
-            <hr>以下是闭源项目<hr>
-            <a class="norap" href="#">iclass</a>
-            <a class="norap" href="#">毕业设计</a>
-            <a class="norap" href="#">......</a>
-        </div>
-    </div><!-- github项目 -->
+<!--    <div class="layui-colla-item">-->
+<!--        <h2 class="layui-colla-title">github项目</h2>-->
+<!--        <div class="layui-colla-content layui-show">-->
+<!--            <a class="norap" href="#">Android 2048</a>-->
+<!--            <a class="norap" href="#">iGeekShop后端</a>-->
+<!--            <a class="norap" href="#">iGeekShop前端</a>-->
+<!--            <a class="norap" href="#">......</a>-->
+<!--            <hr>以下是闭源项目<hr>-->
+<!--            <a class="norap" href="#">iclass</a>-->
+<!--            <a class="norap" href="#">毕业设计</a>-->
+<!--            <a class="norap" href="#">......</a>-->
+<!--        </div>-->
+<!--    </div>&lt;!&ndash; github项目 &ndash;&gt;-->
 
 </div>
-<br>
-<br>
-<br>
-网站正在建设中。。。
 
 <script src="layui/layui.js" charset="utf-8"></script>
 <script src="jQuery/jquery-3.4.1.min.js"></script>
