@@ -23,3 +23,27 @@ body {
     width: 20px;
     margin-right: 10px;
 }
+
+.underline{
+    color: black !important;
+    height: 50px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.underline:after{
+    content: "";
+    width: 0;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transition: all .6s;
+}
+
+.underline:hover:after{
+    color: black;
+    left: 0;
+    width: 100%;
+}
