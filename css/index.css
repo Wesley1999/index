@@ -15,9 +15,10 @@ button {
 body {
     overflow-y: scroll;
 }
-.norap {
+.nowrap {
     white-space:nowrap;
     margin-right: 30px;
+    line-height: 40px;
 }
 .logo {
     width: 20px;
