@@ -1,41 +1,4 @@
-$(function () {
-
-    // 设置target相关
-    let openInNewTab = getCookie("new_tab");
-    if (openInNewTab === "true") {
-        $("#switch").attr("checked", "checked");
-        $("a").attr("target", "_blank");
-    } else {
-        $("#switch").removeAttr("checked", "");
-        $("a").removeAttr("target");
-    }
-    layui.form.render();
-    $("#setting").click(function () {
-        let display = $("#setting_content").css("display");
-        if (display === "none") {
-            $("#setting_content").css("display", "inline");
-        } else {
-            $("#setting_content").css("display", "none");
-        }
-    });
-    //监听指定开关
-    let form = layui.form;
-    form.on('switch(switchTest)', function(data){
-        let checked = this.checked;
-        if (checked) {
-            setCookie("new_tab", true);
-            $("a").attr("target", "_blank");
-        } else {
-            setCookie("new_tab", false);
-            $("a").removeAttr("target");
-        }
-    });
-});
-
-layui.use(['element', 'layer', 'form']);
-$(".layui-btn").click(function () {
-    location.href = $(this).next().html();
-});
+layui.use(['element', 'layer']);
 
 function chromeLinkClick(target) {
     let url = $(target).attr("href");
