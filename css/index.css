@@ -48,3 +48,9 @@ body {
     left: 0;
     width: 100%;
 }
+
+.layui-form-switch {
+    margin-top: 0;
+    margin-left: 5px;
+    line-height: 16px;
+}

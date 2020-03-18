@@ -9,11 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="layui/css/layui.css" media="all">
     <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body style="max-width: 1000px; margin: 0 auto 60px auto; padding: 10px">
-<fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend><a href="https://wangshaogang.com/" style="color: black">主页</a></legend>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px; height: 26px">
+    <legend><a href="https://wangshaogang.com/" style="color: black">主页</a>&nbsp;&nbsp;<i class="layui-icon layui-icon-set-fill" id="setting" style="font-size: 20px"></i>
+        <form id="setting_content" class="layui-form" style="display: none; margin-left: 10px">
+            在新窗口中打开网页<input id="switch" type="checkbox" name="open" lay-skin="switch" lay-filter="switchTest" title="开关" lay-text="ON|OFF">
+        </form>
+    </legend>
 </fieldset>
+
+
+
 <div class="layui-collapse">
 
     <div class="layui-colla-item">
@@ -21,13 +29,13 @@
         <div class="layui-colla-content layui-show">
             <!--            <div style="height: 100px"></div>-->
             <a class="nowrap" href="https://blog.wangshaogang.com/"><img class="logo" src="logos/blog.png">博客</a>
-            <a class="nowrap" href="https://code.wangshaogang.com/"><img class="logo" src="logos/code.png">代码库</a>
+            <a class="nowrap" href="http://wiki.wangshaogang.com/"><img class="logo" src="logos/kancloud.ico">Wiki</a>
             <a class="nowrap" href="https://download.wangshaogang.com/"><img class="logo" src="logos/download.png">云文件</a>
             <a class="nowrap" href="https://diary.wangshaogang.com/"><img class="logo" src="logos/diary.png">日记</a>
             <a class="nowrap" href="https://text.wangshaogang.com/"><img class="logo" src="logos/text.png">文本工具</a>
             <a class="nowrap" href="https://footpoint.wangshaogang.com/"><img class="logo" src="logos/footpoint.png">足迹地图</a>
-            <a class="nowrap" href="http://wiki.wangshaogang.com/"><img class="logo" src="logos/kancloud.ico">Wiki</a>
             <a class="nowrap" href="https://igeekshop.wangshaogang.com/"><img class="logo" src="logos/shop.png">igeekshop</a>
+            <a class="nowrap" href="https://code.wangshaogang.com/"><img class="logo" src="logos/code.png">代码库</a>
             <hr>以下网站通常情况下不对外开放<hr>
             <a class="nowrap" href="https://picbed.wangshaogang.com/"><img class="logo" src="logos/picbed.png">我的图床</a>
             <a class="nowrap" href="https://jdsearch.wangshaogang.com/"><img class="logo" src="logos/jdsearch.png">江大人搜索</a>
@@ -120,9 +128,8 @@
     © 2018-2020 <a class="underline" href="https://wangshaogang.com">wangshaogang.com</a><a class="underline" href="http://beian.miit.gov.cn" target="_blank">鄂ICP备20003291号-1</a>
 </div>
 
-
-<script src="layui/layui.js" charset="utf-8"></script>
 <script src="jQuery/jquery-3.4.1.min.js"></script>
+<script src="layui/layui.js" charset="utf-8"></script>
 <script src="js/index.js"></script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
